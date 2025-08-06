@@ -27,13 +27,11 @@ export default function App() {
           <TareaComponent></TareaComponent>
           <ListadoTareas></ListadoTareas>
         </TareasProvider> 
-{/*
-        <ListaEstudianteProvider>
-            <ListaEstudianteComponents></ListaEstudianteComponents>          
-        </ListaEstudianteProvider>*/}
 
       </SaludoProvider>
-
+   <ListaEstudianteProvider>
+            <ListaEstudianteComponents></ListaEstudianteComponents>          
+        </ListaEstudianteProvider>
 
     </View>
   );
