@@ -10,6 +10,7 @@ import TareaComponent from './Componentes/TareaComponent';
 import ListadoTareas from './Componentes/ListadoTareas';
 import ListaEstudianteProvider from './Provider/ListaEstudianteProvider';
 import ListaEstudianteComponents from './Componentes/ListaEstudianteComponents';
+import ListaEstudiantes from './Componentes/ListaEstudiantes';
 
 export default function App() {
   return (
@@ -18,6 +19,10 @@ export default function App() {
       {/*<SaludosComponent nombre={'Erick'}></SaludosComponent>
       <SaludoComponent2 nombre={"erick"} apellido={'rapalo'}></SaludoComponent2>*/}
 
+       <ListaEstudianteProvider>
+            <ListaEstudianteComponents></ListaEstudianteComponents> 
+            <ListaEstudiantes></ListaEstudiantes>         
+        </ListaEstudianteProvider>
 
       <SaludoProvider>
         <ConsumidoComponents></ConsumidoComponents>
@@ -28,10 +33,9 @@ export default function App() {
           <ListadoTareas></ListadoTareas>
         </TareasProvider> 
 
+        
       </SaludoProvider>
-   <ListaEstudianteProvider>
-            <ListaEstudianteComponents></ListaEstudianteComponents>          
-        </ListaEstudianteProvider>
+       
 
     </View>
   );
